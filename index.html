@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Booking</title>
- 
-
-    <!-- fontawesome icon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
-    <!-- fontawesome icon -->
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -50,6 +44,8 @@
                         <input class="inp-style" type="date" name="">
                     </div>
                 </div>
+
+                <!-- First Class start -->
                 <div class="input-group f-class">
                     <div>
                         <label for="">First Class ($150)</label>
@@ -63,6 +59,10 @@
 
                     </div>
                 </div>
+                <!-- First Class end -->
+
+
+                <!-- Economy start -->
 
                 <div class="input-group f-class">
                     <div>
@@ -70,12 +70,15 @@
                         <input id="economyInput" class="inp-style inp-width inp-value" type="number" name="" value="0">
                     </div>
                     <div class="plus-minus-btn">
-                        <!-- <p> <span>+</span> <span>-</span> </p> -->
+        
                         <button class="btn"><i onclick="ticketCount('economy', false)"
                                 class="fas fa-minus"></i></button>
                         <button class="btn"><i onclick="ticketCount('economy',true)" class="fas fa-plus"></i></button>
                     </div>
                 </div>
+                <!-- Economy end -->
+
+                <!-- calculations -->
                 <div class="calculations">
                     <div class="amount">
                         <div class="left">
@@ -116,36 +119,6 @@
             </div>
         </section>
 
-        <section id="confirmation">
-            <h1>Congratulations!!</h1>
-            <h3>You are buying these tickets</h3>
-            <table>
-                <tr>
-                    <th>Ticket Name</th>
-                    <th>Total pieces</th>
-                    <th>Total price</th>
-                </tr>
-                <tr>
-                    <td>First - Class :</td>
-                    <td><span id="firstClassPieces">0</span> pieces</td>
-                    <td>$ <span id="firstClassPrice">0</span></td>
-                </tr>
-                <tr>
-                    <td>Economy :</td>
-                    <td><span id="economyPieces">0</span> pieces</td>
-                    <td>$ <span id="economyClassPrice">0</span></td>
-                </tr>
-
-                <tr>
-                    <td class="table-last">Total :</td>
-                    <td class="table-last"><span id="totalPieces">0</span> pieces</td>
-                    <td class="table-last">$ <span id="totalPrice">0</span> (With 10% Tax)</td>
-                </tr>
-
-            </table>
-            <button type="submit" class="submit"><a href="thankYou.html"> Submit </a></button>
-
-        </section>
     </main>
 
 
